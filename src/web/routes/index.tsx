@@ -36,10 +36,12 @@ export const routes: YDProps[] = [
     path: '/AboutUs',
     exact: true,
     component: AboutUs,
+  },
+  {
     path: '/course/audition',
     exact: true,
     component: Audition,
-  },
+  }
 ];
 
 // 对状态属性进行监听
