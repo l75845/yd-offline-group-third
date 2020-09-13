@@ -10,6 +10,7 @@ const { lazy, Suspense } = React;
 
 const Demo = lazy(() => import(/* webpackChunkName:"demo" */ '@components/demo'));
 const Login = lazy(() => import(/* webpackChunkName:"login" */ '@components/Login'));
+const AboutUs = lazy(() => import(/* webpackChunkName:"AboutUs" */ '@pages/AboutUs'));
 interface YDProps extends RouteProps {
   auth?: boolean;
 }
@@ -29,6 +30,11 @@ export const routes: YDProps[] = [
     path: '/demos/:id',
     exact: true,
     component: Demo,
+  },
+  {
+    path: '/AboutUs',
+    exact: true,
+    component: AboutUs,
   },
 ];
 
