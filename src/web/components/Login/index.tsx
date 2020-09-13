@@ -40,7 +40,7 @@ const Login: FC<RouteComponentProps> = (routerProps) => {
       <div className="components-login">
         {/* <span><a href="/">登录系统...</a></span> */}
         <span>{token}</span>
-        <h1>动态数据 {str}</h1>
+        <h1>动态数据aaa {str}</h1>
         <span>
           <NavLink to="/">首页xxx</NavLink>
           <NavLink to="/demos/123">测试页</NavLink>
