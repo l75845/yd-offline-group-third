@@ -8,6 +8,7 @@ const _modeflag = _mode == 'production' ? true : false;
 // const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const { library } = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 //公共选项配置区域
 let cssLoaders = [
   MiniCssExtractPlugin.loader,
@@ -105,6 +106,14 @@ const webpackBaseConfig = {
       chunkFilename: _modeflag
         ? 'styles/[name].[contenthash:5].css'
         : 'styles/[name].css',
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: join(__dirname, 'src/web/assets/audition/icons'),
+          to: './images',
+        },
+      ],
     }),
   ],
   experiments: {
