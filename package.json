@@ -49,6 +49,7 @@
     "@webpack-cli/serve": "^1.0.1-alpha.5",
     "babel-loader": "^8.0.5",
     "cross-env": "^7.0.2",
+    "css-doodle": "^0.8.5",
     "css-loader": "^4.2.0",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-typescript": "^9.0.0",
