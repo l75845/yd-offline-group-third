@@ -1,18 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>京程一灯yd-react-generator</title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.bootcdn.net/ajax/libs/normalize/0/normalize.min.css"
-  />
-  <link href="/assets/styles/app.css" rel="stylesheet"><link href="/styles/app.css" rel="stylesheet"></head>
-  <body>
-    <div id="main"></div>
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <!-- <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
-  <script src="http://localhost:3012/scripts/runtime.bundule.js"></script><script src="http://localhost:3012/scripts/app.bundule.js"></script><script src="/scripts/runtime.bundule.js"></script><script src="/scripts/app.bundule.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: SyntaxError: /Users/zhongqi/Desktop/yd-offline-group-third/package.j  son (directory description file): SyntaxError: /Users/zhongqi/Desktop/yd-offline-group  -third/package.json (directory description file): SyntaxError: Unexpected token < in J  SON at position 1065:
+  SyntaxError: /Users/zhongqi/Desktop/yd-offline-group-third/package.json (directory des  cription file): SyntaxError: /Users/zhongqi/Desktop/yd-offline-group-third/package.jso  n (directory description file): SyntaxError: /Users/zhongqi/Desktop/yd-offline-group-t  hird/package.json (directory description file): SyntaxError: Unexpected token < in JSO  N at position 1065
+  ModuleNotFoundError: Module not found: SyntaxError: /Users/zhongqi/Desktop/yd-offline-  group-third/package.json (directory description file): SyntaxError: /Users/zhongqi/Des  ktop/yd-offline-group-third/package.json (directory description file): SyntaxError: Un  expected token < in JSON at position 1065
+  
+  - Compilation.js:1470 
+    [yd-offline-group-third]/[webpack]/lib/Compilation.js:1470:28
+  
+  - NormalModuleFactory.js:647 
+    [yd-offline-group-third]/[webpack]/lib/NormalModuleFactory.js:647:13
+  
+  
+  - NormalModuleFactory.js:233 
+    [yd-offline-group-third]/[webpack]/lib/NormalModuleFactory.js:233:22
+  
+  
+  - NormalModuleFactory.js:357 
+    [yd-offline-group-third]/[webpack]/lib/NormalModuleFactory.js:357:22
+  
+  - NormalModuleFactory.js:120 
+    [yd-offline-group-third]/[webpack]/lib/NormalModuleFactory.js:120:11
+  
+  - NormalModuleFactory.js:525 
+    [yd-offline-group-third]/[webpack]/lib/NormalModuleFactory.js:525:23
+  
+  - async.js:2830 
+    [yd-offline-group-third]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [yd-offline-group-third]/[neo-async]/async.js:2925:13
+  
+  - NormalModuleFactory.js:718 
+    [yd-offline-group-third]/[webpack]/lib/NormalModuleFactory.js:718:23
+  
+  - Resolver.js:328 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/Resolver.js:328:22
+  
+  - Resolver.js:396 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/Resolver.js:396:21
+  
+  
+  - ResolverCachePlugin.js:218 done
+    [yd-offline-group-third]/[webpack]/lib/cache/ResolverCachePlugin.js:218:12
+  
+  - ResolverCachePlugin.js:147 
+    [yd-offline-group-third]/[webpack]/lib/cache/ResolverCachePlugin.js:147:22
+  
+  - Resolver.js:396 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/Resolver.js:396:21
+  
+  
+  - Resolver.js:396 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/Resolver.js:396:21
+  
+  
+  - DescriptionFilePlugin.js:57 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:57:24
+  
+  - DescriptionFileUtils.js:116 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/DescriptionFileUtils.js:116:21
+  
+  - forEachBail.js:24 innerCallback
+    [yd-offline-group-third]/[enhanced-resolve]/lib/forEachBail.js:24:4
+  
+  - DescriptionFileUtils.js:106 onJson
+    [yd-offline-group-third]/[enhanced-resolve]/lib/DescriptionFileUtils.js:106:14
+  
+  - DescriptionFileUtils.js:63 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/DescriptionFileUtils.js:63:15
+  
+  - CachedInputFileSystem.js:28 runCallbacks
+    [yd-offline-group-third]/[enhanced-resolve]/lib/CachedInputFileSystem.js:28:4
+  
+  - CachedInputFileSystem.js:194 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/CachedInputFileSystem.js:194:4
+  
+  - CachedInputFileSystem.js:415 Array.<anonymous>
+    [yd-offline-group-third]/[enhanced-resolve]/lib/CachedInputFileSystem.js:415:16
+  
+  - CachedInputFileSystem.js:24 runCallbacks
+    [yd-offline-group-third]/[enhanced-resolve]/lib/CachedInputFileSystem.js:24:49
+  
+  - CachedInputFileSystem.js:194 
+    [yd-offline-group-third]/[enhanced-resolve]/lib/CachedInputFileSystem.js:194:4
+  
+  - child-compiler.js:131 
+    [yd-offline-group-third]/[html-webpack-plugin]/lib/child-compiler.js:131:18
+  
+  - Compiler.js:490 
+    [yd-offline-group-third]/[webpack]/lib/Compiler.js:490:11
+  
+  - Compiler.js:984 
+    [yd-offline-group-third]/[webpack]/lib/Compiler.js:984:17
+  
+  
+  - task_queues.js:97 processTicksAndRejections
+    internal/process/task_queues.js:97:5
+  
+</pre><script src="/scripts/runtime.bundule.js"></script>
