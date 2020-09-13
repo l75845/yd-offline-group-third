@@ -43,7 +43,7 @@ const webpackBaseConfig = {
       {
         test: /\.(js|jsx|ts|tsx)$/,
         include: [resolve('src')],
-        exclude: /node_modules/,
+        exclude: [/node_modules/],
         loader: 'babel-loader',
       },
       {
