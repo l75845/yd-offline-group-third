@@ -48,6 +48,7 @@
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@webpack-cli/serve": "^1.0.1-alpha.5",
     "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^6.1.0",
     "cross-env": "^7.0.2",
     "css-doodle": "^0.8.5",
     "css-loader": "^4.2.0",
@@ -79,6 +80,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "@tweenjs/tween.js": "^18.6.0",
     "awilix": "^4.2.6",
     "awilix-koa": "^4.0.0",
     "co": "^4.6.0",
@@ -98,6 +100,7 @@
     "react-hooks-fetch": "^0.14.0",
     "react-query": "^2.5.11",
     "react-router-dom": "^5.2.0",
+    "three": "^0.120.1",
     "typescript": "^4.0.2"
   }
 }
