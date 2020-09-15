@@ -35,7 +35,6 @@ export const routes: YDProps[] = [
   {
     path: '/Cooperation',
     exact: true,
-<<<<<<< HEAD
     component: AboutUs,
     
   },
@@ -43,14 +42,6 @@ export const routes: YDProps[] = [
     path: '/course/audition',
     exact: true,
     component: Audition,
-=======
-    component: Cooperation,
-  },
-  {
-    path: '/MyDoole',
-    exact: true,
-    component: MyDoole,
->>>>>>> 0b2796974fb9ea96fde4b7d7a2267201c40f36bd
   }
 ];
 
