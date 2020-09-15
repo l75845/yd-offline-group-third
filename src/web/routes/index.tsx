@@ -8,10 +8,10 @@ import NotFound from '@components/NotFound';
 // import { string } from "prop-types";
 const { lazy, Suspense } = React;
 
-const Demo = lazy(() => import(/* webpackChunkName:"demo" */ '@components/demo'));
-const Login = lazy(() => import(/* webpackChunkName:"login" */ '@components/Login'));
 const AboutUs = lazy(() => import(/* webpackChunkName:"AboutUs" */ '@pages/AboutUs'));
-const Audition = lazy(() => import(/* webpackChunkName:"login" */ '@components/Course/Audition'));
+const Audition = lazy(() => import(/* webpackChunkName:"Audition" */ '@components/Course/Audition'));
+const Cooperation = lazy(() => import(/* webpackChunkName:"Cooperation" */ '@components/Cooperation'));
+const MyDoole = lazy(() => import(/* webpackChunkName:"MyDoole" */ '@components/Cooperation/cssdoodle'));
 interface YDProps extends RouteProps {
   auth?: boolean;
 }
@@ -23,18 +23,19 @@ export const routes: YDProps[] = [
     auth: true,
   },
   {
-    path: '/login',
-    exact: true,
-    component: Login,
-  },
-  {
-    path: '/demos/:id',
-    exact: true,
-    component: Demo,
-  },
-  {
     path: '/AboutUs',
     exact: true,
+    component: AboutUs,
+  },
+  {
+    path: '/course/audition',
+    exact: true,
+    component: Audition,
+  },
+  {
+    path: '/Cooperation',
+    exact: true,
+<<<<<<< HEAD
     component: AboutUs,
     
   },
@@ -42,6 +43,14 @@ export const routes: YDProps[] = [
     path: '/course/audition',
     exact: true,
     component: Audition,
+=======
+    component: Cooperation,
+  },
+  {
+    path: '/MyDoole',
+    exact: true,
+    component: MyDoole,
+>>>>>>> 0b2796974fb9ea96fde4b7d7a2267201c40f36bd
   }
 ];
 
@@ -69,7 +78,7 @@ const Routes = (token: string) => (
             ) : (
                   <Redirect
                     to={{
-                      pathname: '/login',
+                      pathname: '/course/audition',
                       state: { from: props.location },
                     }}
                   />
